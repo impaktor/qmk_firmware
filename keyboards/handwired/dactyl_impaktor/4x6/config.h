@@ -42,6 +42,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Reverse order for right hand? Not sure I understand why...
 #define MATRIX_COL_PINS { B5, B4, E6, D7, C6, D4 }
 
+/* Allow chording of keys */
+#define COMBO_COUNT 2
+#define TAPPING_TERM 200
+
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 

@@ -83,3 +83,6 @@ void persistent_default_layer_set(uint16_t default_layer) {
   default_layer_set(default_layer);
 }
 
+/* Simultaneous pressing A+S -> ESC */
+const uint16_t PROGMEM AS_combo[] = {KC_A, KC_S, COMBO_END};
+combo_t key_combos[COMBO_COUNT] = {COMBO(AS_combo, KC_ESC)};
