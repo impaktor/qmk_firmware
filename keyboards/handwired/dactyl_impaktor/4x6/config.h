@@ -37,14 +37,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // row-driven
 #define MATRIX_ROW_PINS { B3, F6, B1, F7, F5, F4 }
 
+// LEFT:
 //#define MATRIX_COL_PINS { D4, C6, D7, E6, B4, B5 }
 
-// Reverse order for right hand? Not sure I understand why...
+// RIGHT:
 #define MATRIX_COL_PINS { B5, B4, E6, D7, C6, D4 }
 
 /* Allow chording of keys */
 #define COMBO_COUNT 2
 #define TAPPING_TERM 200
+
+/* Two tapps, not 5, for tapp-toggle */
+#define TAPPING_TOGGLE 2
+
+/* Probably need it if using Mode tap with Emacs-common used keys, e.g. Ctrl, SPC etc. */
+#define PERMISSIVE_HOLD
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
